@@ -1,0 +1,83 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;     /* para no decorar texto por usar Etiquetas "a"*/
+    list-style-type: none;      /* para no tener stilos en las listas "los puntos"*/
+}
+:root{
+    --black: #131313 ;
+    --blanco: #ffffff;
+    --violet: #2c2b3cff;
+    --azule: #1b2432ff;
+    /* botones de backgraund */
+    --azul-bt: #183483;
+    --rojito-bt: #af0521;
+    --white-bt: #403f4cff;
+    /* botones de fondos botons */
+    --gris-bt: #201e1e;
+    --celeste-text: #007c92;
+    --white-text: rgb(250, 250, 250);
+ /* IMPORTADOS */
+ --dark-liver: #403f4cff;
+--raisin-black: #2c2b3cff;
+--gunmetal: #1b2432ff;
+--xiketic: #121420ff;
+--copper-penny: #b76d68ff;
+
+}
+
+/* header */
+header{
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(17,17,17,1) 6%, rgba(0,65,128,1) 18%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 40px; /*esto es para mover los bordes de los costados pero no de arriba y abajo*/
+
+}
+
+
+.logo
+{ 
+    height: 100%; /* esto es el alto que tenga el header en este caso porque esta ahi seteado con 70px*/
+
+}
+
+.nav-bar, 
+.nav-list
+{
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.nav-list{
+    gap: 60px;
+}
+
+.nav-list a {
+    color: var(--blanco);
+    font-size: 25px; 
+
+}
+
+.nav-list li:first-child > a {
+    color:var(--white-text);
+    font-weight: 600;
+}
+
+
+
+/* ACA EMPIEZA MAIN */
+main{
+    background: rgb(17,17,17);
+    background: linear-gradient(180deg, rgba(17,17,17,1) 17%, rgba(0,65,128,1) 78%);
+    display:  flex;
+    flex-direction: column;
+}
