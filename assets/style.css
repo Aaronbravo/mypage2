@@ -96,7 +96,10 @@ main{
 }
 
 .text-izq {
-    /* background-color:chartreuse;
+    /* background: linear-gradient(to top #f432A2, #12D3F3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     border-radius: 3em;                 
     padding: 3px; */
     display: flex;
@@ -107,15 +110,22 @@ main{
     width: 50%;
     
 }
+/* h1{
+    background: linear-gradient( top #f432a2, #12d3f3);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    lo intento hacer ahi o ponerlo abajo ( text-izq h1 ) pero me hace lo mismo me lo pone transparente y ahi queda
+} */
 
 .text-izq h1{
-    align-items: center;
-    text-align: center;
     font-size: 48px;
     width: 80%;
     min-width: 500px;
     font-weight: 800;
-    color: #183483;
+    color: #ae00b4;
+  
 }
 
 .text-izq p {
