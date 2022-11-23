@@ -26,6 +26,9 @@
 --copper-penny: #b76d68ff;
 
 }
+body{
+    background: linear-gradient(180deg, rgba(17,17,17,1) 5%, rgba(0,65,128,1) 78%);
+}
 
 /* header */
 header{
@@ -35,7 +38,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 65px;
     padding: 0px 40px; /*esto es para mover los bordes de los costados pero no de arriba y abajo*/
     position: fixed;
     top: 0;
@@ -59,7 +62,7 @@ justify-content: center;
 }
 
 .nav-list{
-    gap: 50px;
+    gap: 20px;
 }
 
 .nav-list a {
@@ -85,23 +88,28 @@ main{
     width: 100%;
 }
 
+/* section hero */
 #hero{
     margin-top: 80px;
     padding: 70px 0px;
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
   
 }
-
-.text-izq {
-    /* background: linear-gradient(to top #f432A2, #12D3F3);
-    color: transparent;
+#hero h1{
+    font-size: 48px;
+    width: 80%;
+    font-weight: 800;
+    min-width: 500px;
+    background: linear-gradient(to top, #30cfd0 3%, #cb2ae0);
+    color:transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    border-radius: 3em;                 
-    padding: 3px; */
+}
+
+.text-izq {
     display: flex;
     text-align: center;
     align-items: center;
@@ -110,23 +118,7 @@ main{
     width: 50%;
     
 }
-/* h1{
-    background: linear-gradient( top #f432a2, #12d3f3);
-    color:transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
 
-    lo intento hacer ahi o ponerlo abajo ( text-izq h1 ) pero me hace lo mismo me lo pone transparente y ahi queda
-} */
-
-.text-izq h1{
-    font-size: 48px;
-    width: 80%;
-    min-width: 500px;
-    font-weight: 800;
-    color: #ae00b4;
-  
-}
 
 .text-izq p {
   
@@ -138,20 +130,24 @@ main{
 .text-izq a {
     
     color: var(--blanco);
-    background-color: var(--black);
+    background: var(--black);
+    transition: all 0.5s ease;
     width: 120px;
     padding: 8px 0px;
     border-radius: 10px;
     font-size: 14px;
     text-align: center;
    
-    
+}
+.text-izq a:hover{
+    background: var(--rojito-bt);
 }
 
 .a-izq{
     display: flex;
     gap: 30px;
 }
+
 
 .text-hero{
     display: flex;
@@ -160,3 +156,162 @@ main{
 
 }
 
+/* section card */
+#info {
+    padding: 70px 0;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.info-card-conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card{
+width: 300px;
+height: 290px;
+padding: 40px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: var(--gris-bt);
+gap: 20px;
+border-radius: 10px;
+
+}
+
+.info-card img{
+    width: 50px;
+}
+
+.info-card h3{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.info-card p{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--rojito-bt);
+}
+/* SECTION CARD TERMINADA CREO! */
+
+
+
+/* ACA EMPIEZA EL FOOTER */
+/* 
+footer{
+    background: var(--azule);
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+
+}
+
+footer a,
+footer p {
+    color: var(--gris-bt);
+    font-weight: 300;
+    font-size: 14px;
+
+}
+
+footer span{
+    font-weight: 800;
+}
+
+.footer-link {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+
+} */
+
+
+#footer-info{
+    background: rgba(0,65,128,1);
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:2px;
+    padding: 50px;
+   
+
+}
+
+.info-footer-div{
+    display: flex;
+    background: var(--gris-bt);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    height: 300px;
+    padding: 40px 30px;
+    border-radius: 10px;
+
+}
+#footer-info h2{
+    background: var(--gris-bt);
+    color: var(--celeste-text);
+    
+}
+
+.caja-3{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: #007c92;
+    gap: 30px;
+    padding: 30px 0;
+    justify-content: center;
+    text-align: start;
+}
+
+#footer-info p{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 0;
+}
+
+#footer-info ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+#footer-info img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
